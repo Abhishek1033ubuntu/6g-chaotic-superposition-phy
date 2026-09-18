@@ -1,0 +1,9 @@
+cff-version: 1.1.0
+message: "If you use or reference this work, please cite it as below."
+authors:
+  - family-names: "Singh"
+    given-names: "Abhishek"
+    orcid: "https://orcid.org/0009-0004-6913-096X"
+title: "6g-chaotic-superposition-phy"
+date-released: 2026-09-18
+version: "1.0.0"
