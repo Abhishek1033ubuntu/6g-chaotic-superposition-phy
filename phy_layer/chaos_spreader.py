@@ -1,17 +1,19 @@
 """
-Chaotic Phase-Coded Spreader (ChaCha20 Integration)
+Chaotic Phase-Coded Spreader Engine (ARX-20 PLS Integration)
 Authors: Abhishek Singh & AI Collaborator
+License: MIT
 """
+
 import numpy as np
-from phy_layer.chacha_phase_cipher import ChaCha20PhaseCipher
+from phy_layer.arx20_phase_cipher import ARX20PhaseCipher
+
 
 class ChaosSpreader:
     def __init__(self, key: bytes = None, nonce: bytes = None):
-        # Default fallback 256-bit key and 96-bit nonce for baseline tests
         self.key = key if key else b"6G_CHAOTIC_SUPERPOSITION_KEY_32B"
-        self.nonce = nonce if nonce else b"NYC_RF_N12B"
-        self.cipher = ChaCha20PhaseCipher(self.key, self.nonce)
-        
+        self.nonce = nonce if nonce else b"NYC_RF_NONCE"
+        self.cipher = ARX20PhaseCipher(self.key, self.nonce)
+
     def generate_phase_sequence(self, num_subcarriers: int, frame_counter: int = 0) -> np.ndarray:
         return self.cipher.generate_phase_sequence(num_subcarriers, frame_counter)
 
