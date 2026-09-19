@@ -1,0 +1,31 @@
+id: chaotic_phy_arx20_phase_cipher_cc
+label: ARX-20 Phase Cipher
+category: '[Chaotic PHY]'
+
+parameters:
+- id: key
+  label: Key (256-bit / 32-char)
+  dtype: string
+  default: '6G_CHAOTIC_SUPERPOSITION_KEY_32B'
+- id: nonce
+  label: Nonce (96-bit / 12-char)
+  dtype: string
+  default: 'NYC_RF_NONCE'
+- id: decrypt
+  label: Mode
+  dtype: bool
+  default: 'False'
+  options: ['False', 'True']
+  option_labels: ['Encrypt (TX)', 'Decrypt (RX)']
+
+inputs:
+- domain: stream
+  dtype: complex
+
+outputs:
+- domain: stream
+  dtype: complex
+
+templates:
+  imports: import chaotic_phy
+  make: chaotic_phy.arx20_phase_cipher_cc(${key}, ${nonce}, ${decrypt})
