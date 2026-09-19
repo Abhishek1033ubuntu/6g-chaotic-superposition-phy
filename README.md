@@ -41,7 +41,7 @@ An end-to-end 6G physical layer architecture integrating **256-bit ARX-20 Physic
 ## Directory Structure
 
 ```text
-6g-chaotic-phy/
+6g-chaotic-superposition-phy/
 ├── cpp_core/
 │   └── arx20_core.cpp             # C++ SIMD Hardware Optimization Core
 ├── phy_layer/
@@ -77,7 +77,7 @@ Distributed under the MIT License. See LICENSE for details.
 ### Local Git Commands to Update Repository
 
 ```bash
-git add gr-chaotic-phy/ README.md
+git add 6g-chaotic-superposition-phy/ README.md
 git commit -m "v1.2.0: Add GNU Radio OOT C++ architecture and updated project documentation"
 git push origin main
 ```
