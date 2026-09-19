@@ -1,9 +1,20 @@
-cff-version: 1.1.0
-message: "If you use or reference this work, please cite it as below."
+cff-version: 1.2.0
+message: "If you use this software or research framework, please cite it as below."
 authors:
   - family-names: "Singh"
     given-names: "Abhishek"
-    orcid: "https://orcid.org/0009-0004-6913-096X"
-title: "6g-chaotic-superposition-phy"
-date-released: 2026-09-18
-version: "1.0.0"
+    orcid: "https://orcid.org/0009-0004-6913-096X" 
+title: "6G High-Precision ISAC & ARX-20 Physical Layer Security Engine"
+version: "1.2.0"
+doi: "10.5281/zenodo.22834891" # Leave placeholder or update post-Zenodo minting
+date-released: 2026-09-19
+url: "https://github.com/Abhishek1033ubuntu/6g-chaotic-superposition-phy"
+repository-code: "https://github.com/Abhishek1033ubuntu/6g-chaotic-superposition-phy"
+keywords:
+  - "6G"
+  - "Physical Layer Security"
+  - "ISAC"
+  - "ARX-20 Cipher"
+  - "Radar Processing"
+  - "GNU Radio"
+license: "MIT"
