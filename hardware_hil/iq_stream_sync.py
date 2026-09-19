@@ -84,11 +84,7 @@ class IQStreamSync:
     # 3. STO & CFO Joint Estimation and Compensation
     # -------------------------------------------------------------------
     def estimate_and_compensate(self, rx_signal: np.ndarray):
-        """
-        Calculates Schmidl & Cox metric P(d)/R(d) to identify Frame Start (STO)
-        and estimates Carrier Frequency Offset (CFO).
-        """
-        L = self.num_subcarriers // 2  # Half length
+        L = self.num_subcarriers // 2
         N_search = len(rx_signal) - 2 * L
         
         P = np.zeros(N_search, dtype=complex)
@@ -103,18 +99,26 @@ class IQStreamSync:
             if R[d] > 0:
                 M[d] = (np.abs(P[d]) ** 2) / (R[d] ** 2)
                 
-        # 1. STO Detection (Peak Index of Metric M)
-        sto_est = np.argmax(M)
+        # 1. Coarse STO Detection
+        coarse_sto = np.argmax(M)
         
-        # 2. CFO Estimation
-        angle_p = np.angle(P[sto_est])
-        fractional_cfo_est = angle_p / (np.pi)  # Normalized to subcarrier spacing
-        cfo_hz_est = fractional_cfo_est * (self.sample_rate_hz / self.num_subcarriers)
+        # 2. Fractional CFO Estimation & Preliminary Correction
+        angle_p = np.angle(P[coarse_sto])
+        fractional_cfo_est = angle_p / np.pi
         
-        # 3. CFO Compensation
         time_indices = np.arange(len(rx_signal))
         cfo_correction_vector = np.exp(-1j * 2 * np.pi * fractional_cfo_est * time_indices / self.num_subcarriers)
-        rx_signal_corrected = rx_signal * cfo_correction_vector
+        rx_cfo_corr = rx_signal * cfo_correction_vector
+        
+        # 3. Fine STO Refinement via Cross-Correlation with Known Preamble
+        known_preamble = self.generate_schmidl_cox_preamble()[self.cp_length:] # Exclude CP for sharp peak
+        xcorr = np.abs(np.correlate(rx_cfo_corr, known_preamble, mode='valid'))
+        sto_est = np.argmax(xcorr)
+        
+        cfo_hz_est = fractional_cfo_est * (self.sample_rate_hz / self.num_subcarriers)
+        payload_start = sto_est + len(known_preamble)
+        
+        return rx_cfo_corr, sto_est, cfo_hz_est, payload_start, M
         
         # 4. Extract Synchronized Frame (Post-Preamble payload start)
         payload_start = sto_est + self.cp_length + self.num_subcarriers
