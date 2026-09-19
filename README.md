@@ -1,6 +1,7 @@
 # 6G Physical Layer Prototype: Chaotic Phase-Coded OFDM Superposition Architecture
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22842874-blue?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.22842874)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22842874-blue?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.22842874) 
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22848049-blue?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.22848049)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0004--6913--096X-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0009-0004-6913-096X) 
 [![AI Collaboration](https://img.shields.io/badge/AI--Collaborator-Google%20Gemini-blue?style=flat&logo=google-gemini&logoColor=white)](https://gemini.google.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
