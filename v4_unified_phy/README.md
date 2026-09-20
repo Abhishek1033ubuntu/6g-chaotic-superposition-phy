@@ -46,7 +46,3 @@ This module addresses physical-layer challenges in sub-THz/mmWave 6G deployments
 ## Summary Result
 
 By utilizing spatial superposition between the perimeter inward radiator and the building core outward repeater, the inner floor profile maintains a symmetrical U-shape, guaranteeing 100% flat QoS compliance across the entire 40m floor layout.
-
-```
-
-```
