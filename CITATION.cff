@@ -1,20 +1,21 @@
 cff-version: 1.2.0
-title: "6G Metropolitan Spatial Field & RF Transparency Optimizer"
-message: "If you use this software or simulation engine in your research, please cite it as below."
-type: software
+message: "If you use this software, please cite it as below."
 authors:
   - family-names: "Singh"
     given-names: "Abhishek"
-    orcid: "https://orcid.org/0009-0004-6913-096X" 
-doi: "10.5281/zenodo.22834891" # Leave placeholder or update post-Zenodo minting
+    orcid: "https://orcid.org/0009-0004-6913-096X"
+title: "6G Physical Layer Prototype: Chaotic Phase-Coded OFDM Superposition Architecture"
+version: "4.0.0"
+doi: "10.5281/zenodo.22856270"
+date-released: "2026-09-21"
+url: "https://github.com/Abhishek1033ubuntu/6g-chaotic-superposition-phy"
 repository-code: "https://github.com/Abhishek1033ubuntu/6g-chaotic-superposition-phy"
-abstract: "A multi-physics simulation engine for 6G sub-THz/mmWave (28 GHz) spatial field propagation, multi-directional incident-angle aware steering, and phase-coherence inversion testing."
 keywords:
-  - 6G
-  - Wireless Communication
-  - Phase Coherence
-  - RF Transparency
-  - Metropolitan Field Simulation
-license: MIT
-version: "v3.0.0"
-date-released: "2026-09-20"
+  - "6G"
+  - "Physical Layer Security"
+  - "ISAC"
+  - "OFDM"
+  - "Sub-THz"
+  - "ARX-20 Phase Cipher"
+  - "GNU Radio"
+license: "MIT"
