@@ -52,6 +52,26 @@ An end-to-end 6G physical layer architecture integrating **256-bit ARX-20 Physic
 ### 🔹 [Version 1: 1D Baseline Path Loss (`/v1_1d_model`)](./v1_1d_model)
 * **Key Features**: Basic Free-Space Line of Sight (FSPL) and single-obstacle concrete attenuation modeling.
 ---
+### Performance Benchmarks
+
+| Metric | Target Standard | Achieved Benchmark | Status |
+| :--- | :--- | :--- | :--- |
+| **Communication BER** | $< 10^{-3}$ (Pre-FEC) | **0.000000** | PASS |
+| **Radar Range Error** | $< 1.0\text{ m}$ | **0.17 m (17 cm)** | PASS |
+| **Velocity Tracking** | Target: $72.0\text{ km/h}$ | **72.32 km/h** | PASS |
+| **DSP Frame Latency** | $< 50\text{ µs}$ | **29.33 µs** | PASS |
+
+---
+
+📁 Repository Version History
+
+◆ Version 4: Unified 3D Volumetric & Sub-THz Doppler Engine ( /v4_unified_phy )
+• Key Features: 100-floor 3D volumetric matrix solver, dynamic shadowing resilience (+20.55 dB QoS margin), and Sub-THz elevator Doppler drift mitigation.
+• Coverage Threshold: 100% Coverage (> -75 dBm) across floor depth and vertical riser levels.
+• Sub-Carrier Spacing: 960 kHz SCS suppresses ICI down to -56.50 dB for 12 m/s dynamic motion.
+
+◆ Version 3: Multi-Directional Angle-Aware Steering ( /v3_multidirectional )
+...
 
 ## Directory Structure
 
