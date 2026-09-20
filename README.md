@@ -77,22 +77,38 @@ An end-to-end 6G physical layer architecture integrating **256-bit ARX-20 Physic
 
 ```text
 6g-chaotic-superposition-phy/
-├── cpp_core/
-│   └── arx20_core.cpp             # C++ SIMD Hardware Optimization Core
-├── phy_layer/
-│   ├── arx20_phase_cipher.py      # 256-Bit Cryptographic Phase Engine
-│   ├── chaos_spreader.py          # Physical Layer Spreading Pipeline
-│   ├── modulation.py
-│   ├── fec_viterbi.py
-│   └── fde_equalizer.py
-├── subsystems/
-│   └── isac_radar.py              # Sub-Meter ISAC Radar Engine
-├── gr-chaotic-phy/                # GNU Radio 3.10 Out-Of-Tree Module
-├── sim_runner.py                  # End-to-End Master Verification Pipeline
-├── README.md
-└── LICENSE
+├── channel_models/            # Channel propagation & path loss models
+├── cpp_core/                  # C++ SIMD hardware optimization core
+│   └── arx20_core.cpp
+├── docs/                      # Architectural handoff & deployment docs
+├── grc/                       # GNU Radio block YAML configurations
+├── hardware_hil/              # Hardware-in-the-loop streaming scripts
+├── lib/                       # C++ C++ streaming block implementations
+├── mimo_ace/                  # Active Constellation Extension engines
+├── phy_layer/                 # Core physical layer pipeline
+│   ├── arx20_phase_cipher.py  # 256-Bit cryptographic phase engine
+│   ├── chaos_spreader.py      # Physical layer spreading pipeline
+│   ├── fde_equalizer.py       # Frequency domain equalization
+│   ├── fec_viterbi.py         # Soft-decision Viterbi decoding
+│   └── modulation.py          # OFDM/QAM modulation routines
+├── subsystems/                # High-level subsystems
+│   └── isac_radar.py          # Sub-meter ISAC radar engine
+├── v1_1d_model/               # Baseline 1D path loss modeling
+├── v2_single_axis/            # Single-axis spatial steering engine
+├── v3_multidirectional/       # Multi-directional angle-aware steering
+├── v4_unified_phy/            # 3D volumetric matrix solver & Sub-THz Doppler engine
+│   ├── vertical_riser_matrix.py
+│   ├── ofdm_doppler_sim.py
+│   └── README.md
+├── gr-chaotic-phy/            # GNU Radio 3.10 Out-Of-Tree (OOT) module
+├── CITATION.cff               # Repository citation metadata
+├── LICENSE                    # MIT License
+├── README.md                  # Master repository documentation
+└── sim_runner.py              # End-to-end master verification pipeline
+
 ```
-Quick Start
+# Quick Start
+
 ```
 Python Simulation Pipeline
 Bash
