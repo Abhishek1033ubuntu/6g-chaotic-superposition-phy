@@ -14,10 +14,10 @@
 ## Architecture Topology
 
 ```text
-  [ Outdoor Macro gNB (28 GHz) ]
-                 |
-                 | (200m Slant Path)
-                 v
+                [ Outdoor Macro gNB (28 GHz) ]
+                         |
+                         | (200m Slant Path)
+                         v
      +-----------------------------------------------+
      | Front-Reception Node (Window Facade, 0m)     |
      +-----------------------+-----------------------+
@@ -53,12 +53,15 @@
 | **Clear Line-of-Sight** | $0.5\text{ m} \to 39.5\text{ m}$ | $-48.89\text{ dBm}$ | **Optimal** |
 | **Active Blockage Zone** | $12.0\text{ m} \to 18.0\text{ m}$ | **$-54.45\text{ dBm}$** | **Non-Blocking (+20.55 dB Margin)** |
 
-### 3. Sub-THz OFDM Doppler Drift (12 m/s Elevator Shaft)
+### 3. Volumetric 100-Floor Matrix & OFDM Doppler Metrics
 
-| Sub-Carrier Spacing (SCS) | Max Doppler Shift | ICI Power Ratio | Physical Status |
-| --- | --- | --- | --- |
-| **120 kHz** | $1120.0\text{ Hz}$ | $-38.27\text{ dB}$ | Robust |
-| **960 kHz** | $1120.0\text{ Hz}$ | **$-56.33\text{ dB}$** | **Optimal Sub-THz Performance** |
+| Metric Domain | Parameter | Measured Value | Physical Significance |
+| :--- | :--- | :--- | :--- |
+| **Volumetric Coverage** | Max Signal Power | **$-41.77\text{ dBm}$** | Perimeter Facade ($0.5\text{ m}$ / $39.5\text{ m}$) |
+| **Volumetric Coverage** | Min Signal Power | **$-77.12\text{ dBm}$** | Upper Core Dip ($20.0\text{ m}$) |
+| **Elevator Dynamics** | Max Doppler Shift | **$1120.00\text{ Hz}$** | $12\text{ m/s}$ Riser Velocity at $28\text{ GHz}$ |
+| **Numerology (SCS)** | ICI Power ($120\text{ kHz}$) | **$-38.44\text{ dB}$** | Standard mmWave Numerology |
+| **Numerology (SCS)** | ICI Power ($960\text{ kHz}$) | **$-56.50\text{ dB}$** | **Optimal Sub-THz Riser Numerology** |
 
 ---
 
