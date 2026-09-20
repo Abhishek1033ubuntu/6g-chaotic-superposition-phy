@@ -1,0 +1,16 @@
+{
+    "unassisted_qos_coverage_pct": 85.52,
+    "assisted_qos_coverage_pct": 96.17,
+    "field_coverage_gain_pct": 10.65,
+    "field_uniformity_std_dev_db": 16.76,
+    "min_grid_power_dbm": -120.0,
+    "mean_grid_power_dbm": -67.39,
+    "simulation_parameters": {
+        "carrier_frequency_hz": 28000000000.0,
+        "tx_power_dbm": 46.0,
+        "qos_threshold_dbm": -75.0,
+        "grid_size_m": 1000,
+        "grid_resolution_m": 10,
+        "target_phase_error_rad": 0.05
+    }
+}
