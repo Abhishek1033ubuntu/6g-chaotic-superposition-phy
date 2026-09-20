@@ -42,6 +42,13 @@ This module addresses physical-layer challenges in sub-THz/mmWave 6G deployments
 | **Elevator Core Riser** | $39.5\text{ m}$ | **$-43.97\text{ dBm}$** | Exceeds by $+31.03\text{ dB}$ |
 
 ---
+## Dynamic Human Blockage & Mobility Resilience
+
+| Trajectory Condition | Spatial Region | Min Power Level | QoS Margin (-75 dBm) | Link Status |
+| :--- | :--- | :--- | :--- | :--- |
+| **Clear LoS Walk Path** | $0.5\text{ m} \to 39.5\text{ m}$ | $-48.89\text{ dBm}$ | $+26.11\text{ dB}$ | **Optimal** |
+| **Active Human Blockage** | $12.0\text{ m} \to 18.0\text{ m}$ | $-54.45\text{ dBm}$ | **$+20.55\text{ dB}$** | **Non-Blocking** |
+---
 
 ## Summary Result
 
