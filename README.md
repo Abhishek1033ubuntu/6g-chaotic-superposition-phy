@@ -38,6 +38,20 @@ An end-to-end 6G physical layer architecture integrating **256-bit ARX-20 Physic
 | **DSP Frame Latency** | $< 50\ \mu\text{s}$ | **29.33 }\mu\text{s}** | PASS |
 
 ---
+## 📂 Repository Version History
+
+### 🔹 [Version 3: Multi-Directional Angle-Aware Steering (`/v3_multidirectional`)](./v3_multidirectional)
+* **Key Features**: Dynamic 2D incident-angle shadow corridors from 4 corner gNBs ($NW, NE, SW, SE$), Phase-Coherence Inversion & Destructive Null testing ($\Delta\phi = 0.05\text{ rad}$).
+* **Coverage ($\ge -75\text{ dBm}$)**: **96.17%** (+10.65% Net Gain).
+* **Mean Power**: **-67.39 dBm** | Spatial Variance: **16.76 dB**.
+
+### 🔹 [Version 2: Single-Axis Spatial Steering (`/v2_single_axis`)](./v2_single_axis)
+* **Key Features**: Linear street canyon shadow forwarding, vertical aperture insertion loss modeling ($\le 2.0\text{ dB}$).
+* **Coverage ($\ge -75\text{ dBm}$)**: 85.52% baseline vs assisted performance.
+
+### 🔹 [Version 1: 1D Baseline Path Loss (`/v1_1d_model`)](./v1_1d_model)
+* **Key Features**: Basic Free-Space Line of Sight (FSPL) and single-obstacle concrete attenuation modeling.
+---
 
 ## Directory Structure
 
@@ -69,6 +83,16 @@ Bash
 g++ -O3 -march=native cpp_core/arx20_core.cpp -o arx20_core
 ./arx20_core
 ```
+## 🚀 Quick Start (Version 3)
+
+```bash
+# Run latest multi-directional spatial simulation
+python v3_multidirectional/metropolitan_coverage/multi_dir_optimizer.py
+
+# Run phase-coherence inversion & interference test
+python v3_multidirectional/metropolitan_coverage/phase_inversion_test.py
+```
+
 # License
 Distributed under the MIT License. See LICENSE for details.
 
