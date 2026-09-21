@@ -199,12 +199,6 @@ python v3_multidirectional/metropolitan_coverage/phase_inversion_test.py
 
 ---
 
-### License
-
-Distributed under the MIT License. See `LICENSE` for details.
-
----
-
 ### Citation & Research Attribution
 
 If you utilize this physical layer framework, the ARX-20 phase cipher, or the 140 GHz Sub-THz ISAC simulation pipeline in your academic research, software projects, or publications, please cite this repository using the following metadata:
@@ -222,3 +216,9 @@ If you utilize this physical layer framework, the ARX-20 phase cipher, or the 14
   doi          = {10.5281/zenodo.YOUR_NEW_ZENODO_ID},
   url          = {[https://github.com/Abhishek1033ubuntu/6g-chaotic-superposition-phy](https://github.com/Abhishek1033ubuntu/6g-chaotic-superposition-phy)}
 }
+
+---
+
+### License
+
+Distributed under the MIT License. See `LICENSE` for details.
