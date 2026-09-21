@@ -79,10 +79,15 @@ An end-to-end 6G physical layer architecture integrating **256-bit ARX-20 Physic
 ├── cpp_core/                    # C++ SIMD hardware optimization core
 │   └── arx20_core.cpp
 ├── docs/                        # Architectural specifications & documentation
+│   ├── handoff_architecture.md  # Multi-gNB beam handover & mobility specifications
+│   ├── link_budget_analysis.md  # Sub-THz link margin & path loss calculations
+│   ├── rf_planning_sitemap.md   # Deployment sitemap & spatial coverage topology
 │   └── images/                  # Exported performance plots & diagrams
+│       ├── ber_vs_snr.png
 │       ├── isac_comm_ber.png
 │       ├── isac_target_tracking.png
-│       └── isac_tradeoff_curve.png
+│       ├── isac_tradeoff_curve.png
+│       └── range_doppler_map.png
 ├── grc/                         # GNU Radio block YAML configurations
 ├── hardware_hil/                # Hardware-in-the-loop streaming scripts
 ├── lib/                         # C++ streaming block implementations
@@ -101,10 +106,10 @@ An end-to-end 6G physical layer architecture integrating **256-bit ARX-20 Physic
 │   ├── ambiguity_matrix.py      # ISAC radar ambiguity function analysis
 │   ├── beamformer_mimo.py       # Hybrid analog/digital beamforming engine
 │   ├── broad_beam_flood.py      # Broad-beam radar illumination engine
-│   ├── comm_performance.py      # Step 5: PHY BER & constellation evaluation
+│   ├── comm_performance.py      # PHY BER & constellation evaluation
 │   ├── dl_eavesdropper_test.py  # Deep learning eavesdropper resilience test
 │   ├── isac_radar.py            # Sub-meter ISAC radar engine
-│   ├── isac_tradeoff.py         # Step 6: Pareto sensing vs. comm allocation
+│   ├── isac_tradeoff.py         # Pareto sensing vs. comm allocation
 │   ├── target_detection.py      # 2D CA-CFAR object detection engine
 │   └── target_tracking.py       # Extended Kalman Filter (EKF) tracking engine
 ├── v1_1d_model/                 # Baseline 1D path loss modeling
@@ -123,7 +128,6 @@ An end-to-end 6G physical layer architecture integrating **256-bit ARX-20 Physic
 ├── README.md                    # Master repository documentation
 └── sim_runner.py                # End-to-end master verification pipeline
 ```
-
 ---
 
 ### Subsystem Architecture Overview
