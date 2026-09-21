@@ -63,6 +63,7 @@ An end-to-end 6G physical layer architecture integrating **256-bit ARX-20 Physic
 
 ◆ **Version 1: 1D Baseline Path Loss** (`/v1_1d_model`)
 • **Key Features:** Basic Free-Space Line of Sight (FSPL) and single-obstacle concrete attenuation modeling.
+
 ---
 
 ### Directory Structure
