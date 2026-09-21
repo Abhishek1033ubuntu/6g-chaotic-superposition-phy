@@ -88,6 +88,10 @@ An end-to-end 6G physical layer architecture integrating **256-bit ARX-20 Physic
 │       ├── isac_target_tracking.png
 │       ├── isac_tradeoff_curve.png
 │       └── range_doppler_map.png
+├── gr-chaotic-phy/              # GNU Radio 3.10 Out-Of-Tree (OOT) module
+│   ├── arx20_core.cpp
+│   ├── arx20_phase_cipher_cc_impl.cc
+│   └── chaotic_phy_arx20_phase_cipher_cc.block.yml
 ├── grc/                         # GNU Radio block YAML configurations
 ├── hardware_hil/                # Hardware-in-the-loop streaming scripts
 ├── lib/                         # C++ streaming block implementations
@@ -122,7 +126,6 @@ An end-to-end 6G physical layer architecture integrating **256-bit ARX-20 Physic
 ├── v5_isac_phy/                 # 6G ISAC Advanced PHY Module (140 GHz Sub-THz)
 │   ├── run_isac_pipeline.py     # ISAC Master Pipeline Orchestrator
 │   └── README.md                # Subsystem architecture & performance dossier
-├── gr-chaotic-phy/              # GNU Radio 3.10 Out-Of-Tree (OOT) module
 ├── CITATION.cff                 # Repository citation metadata
 ├── LICENSE                      # MIT License
 ├── README.md                    # Master repository documentation
