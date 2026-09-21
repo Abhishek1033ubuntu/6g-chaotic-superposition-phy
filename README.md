@@ -202,3 +202,23 @@ python v3_multidirectional/metropolitan_coverage/phase_inversion_test.py
 ### License
 
 Distributed under the MIT License. See `LICENSE` for details.
+
+---
+
+### Citation & Research Attribution
+
+If you utilize this physical layer framework, the ARX-20 phase cipher, or the 140 GHz Sub-THz ISAC simulation pipeline in your academic research, software projects, or publications, please cite this repository using the following metadata:
+
+#### BibTeX Citation
+
+```bibtex
+@software{singh_2026_6g_chaotic_phy,
+  author       = {Singh, Abhishek},
+  title        = {6G Physical Layer Prototype: Chaotic Phase-Coded OFDM Superposition Architecture (v5.0.0-isac)},
+  month        = sep,
+  year         = 2026,
+  publisher    = {Zenodo},
+  version      = {v5.0.0-isac},
+  doi          = {10.5281/zenodo.YOUR_NEW_ZENODO_ID},
+  url          = {[https://github.com/Abhishek1033ubuntu/6g-chaotic-superposition-phy](https://github.com/Abhishek1033ubuntu/6g-chaotic-superposition-phy)}
+}
