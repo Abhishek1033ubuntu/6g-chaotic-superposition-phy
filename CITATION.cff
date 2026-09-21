@@ -5,7 +5,7 @@ authors:
     given-names: "Abhishek"
     orcid: "https://orcid.org/0009-0004-6913-096X"
 title: "6G Physical Layer Prototype: Chaotic Phase-Coded OFDM Superposition Architecture"
-version: "4.0.0"
+version: "v5.0.0-isac"
 doi: "10.5281/zenodo.22856270"
 date-released: "2026-09-21"
 url: "https://github.com/Abhishek1033ubuntu/6g-chaotic-superposition-phy"
