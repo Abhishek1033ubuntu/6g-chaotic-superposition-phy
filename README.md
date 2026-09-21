@@ -1,5 +1,6 @@
 # 6G Physical Layer Prototype: Chaotic Phase-Coded OFDM Superposition Architecture
 
+[![Release](https://img.shields.io/badge/Release-v5.0.0--isac-blue?style=for-the-badge&logo=github)](https://github.com/Abhishek1033ubuntu/6g-chaotic-superposition-phy/releases/tag/v5.0.0-isac)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22862881-blue?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.22862881) 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22848049-blue?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.22848049)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0004--6913--096X-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0009-0004-6913-096X) 
