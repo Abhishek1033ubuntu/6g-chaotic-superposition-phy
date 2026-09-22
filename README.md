@@ -220,7 +220,7 @@ If you utilize this physical layer framework, the ARX-20 phase cipher, or the 14
   year         = 2026,
   publisher    = {Zenodo},
   version      = {v5.0.0-isac},
-  doi          = {10.5281/zenodo.YOUR_NEW_ZENODO_ID},
+  doi          = {10.5281/zenodo.22876354},
   url          = {[https://github.com/Abhishek1033ubuntu/6g-chaotic-superposition-phy](https://github.com/Abhishek1033ubuntu/6g-chaotic-superposition-phy)}
 }
 
